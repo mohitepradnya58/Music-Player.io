@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+  </head>
+  <body>
+    <div class="wraper">
+      <div class="icon">
+        <i class="material-icons" id="volume">volume_up</i>
+        <span id="more-music" class="material-icons queue_music"
+          >queue_music</span
+        >
+      </div>
+
+      <div class="music-list">
+        <div class="header">
+          <div class="row">
+            <i class="list material-icons">queue_music</i>
+            <span id="listHeader">Music list</span>
+          </div>
+          <i id="close" class="material-icons">close</i>
+        </div>
+        <ul>
+          <!-- here li list are coming from js -->
+        </ul>
+      </div>
+      <!-- <div class="music-list">
+        <div class="header">
+          <div class="row">
+            <i class="list material-icons">queue_music</i>
+            <span id="listHeader">Music list</span>
+            <i id="close" class="material-icons">close</i>
+          </div>
+        </div>
+        <ul>
+          
+        </ul>
+         <p>
+          <span class="allname">Birthday Song</span>
+          <audio controls>
+            <source src="songs/birthday.mp3" type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
+        </p>
+        <p>
+          <span class="allname"> Itti Si Hasi</span>
+          <audio controls>
+            <source src="songs/Itti si Hasi.mp3" type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
+        </p>
+        <p>
+          <span class="allname"> Khushi </span>
+          <audio controls>
+            <source src="songs/khushi.mp3" type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
+        </p>
+        <p>
+          <span class="allname">MP3 Play</span>
+          <audio controls>
+            <source src="songs/mp3 play.mp3" type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
+        </p>
+        <p>
+          <span class="allname">Teri Meri</span>
+          <audio controls>
+            <source src="songs/Teri Meri.mp3" type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
+        </p> 
+      </div> -->
+
+      <div class="img">
+        <img src="" width="230px" height="220px" />
+      </div>
+      <div class="names">
+        <h3 class="songName"></h3>
+      </div>
+
+      <div class="progress-area">
+        <div class="progress-bar">
+          <input id="progress" type="range" value="0" />
+        </div>
+        <div class="song-timer">
+          <span class="current-time">0:00</span>
+          <span class="max-duration">0:00</span>
+        </div>
+        <audio id="main-audio" src=""></audio>
+      </div>
+
+      <div class="icons">
+        <span class="material-icons repeat" title="Playlist looped" id="repeat"
+          >repeat</span
+        >
+        <i class="fa fa-backward" id="backward"></i>
+        <div class="play-pause">
+          <i class="material-icons">play_arrow</i>
+        </div>
+        <i class="fa fa-forward" id="forward"></i>
+        <i class="material-icons" id="favorite">favorite_border</i>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
